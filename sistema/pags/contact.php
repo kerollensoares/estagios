@@ -1,11 +1,11 @@
-<?php include("assets/functions/utils.php");?>
+
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
 
         <meta charset="utf-8">
-        <title>Estagios</title>
+        <title>Andia - Responsive Agency Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -35,6 +35,7 @@
     </head>
 
     <body>
+
         <!-- Header -->
         <div class="container">
             <div class="header row">
@@ -47,12 +48,12 @@
                                 <span class="icon-bar"></span>
                             </a>
                             <h1>
-                                <a class="brand" href="index.html">Estagios - um novo jeito de gerenciar...</a>
+                                <a class="brand" href="index.html">Andia - a super cool design agency...</a>
                             </h1>
                             <div class="nav-collapse collapse">
                                 <ul class="nav pull-right">
-                                    <li class="current-page">
-                                        <a href="index.html"><i class="icon-home"></i><br />Inicio</a>
+                                    <li>
+                                        <a href="index.html"><i class="icon-home"></i><br />Home</a>
                                     </li>
                                     <li>
                                         <a href="portfolio.html"><i class="icon-camera"></i><br />Portfolio</a>
@@ -64,10 +65,9 @@
                                         <a href="services.html"><i class="icon-tasks"></i><br />Services</a>
                                     </li>
                                     <li>
-										<?php echo link_to("<i class='icon-user'></i><br />Sobre", "?pag=about"); ?>
-                                        <!-- <a href="?pag=about"><i class="icon-user"></i><br />About</a> -->
+                                        <a href="about.html"><i class="icon-user"></i><br />About</a>
                                     </li>
-                                    <li>
+                                    <li class="current-page">
                                         <a href="contact.html"><i class="icon-envelope-alt"></i><br />Contact</a>
                                     </li>
                                 </ul>
@@ -78,51 +78,46 @@
             </div>
         </div>
 
-		<div class="container">
-			Teste
-			<?php //include("pags/home.php"); ?>
-		</div>
-				
-        <!-- Slider -->
-        <div class="slider">
+        <!-- Page Title -->
+        <div class="page-title">
             <div class="container">
-				<? 	if (isset($_GET['pag'])) {
-						$pag = $_GET['pag'];
-					}else{
-						$pag = "home";
-					}
-					render_partial($pag); ?>
-				<? //include("pags/home.php"); ?>
-                <!--
-				<div class="row">
-                    <div class="span10 offset1">
-                        <div class="flexslider">
-                            <ul class="slides">
-                                <li data-thumb="assets/img/slider/1.jpg">
-                                    <img src="assets/img/slider/1.jpg">
-                                    <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur.</p>
-                                </li>
-                                <li data-thumb="assets/img/slider/2.jpg">
-                                    <img src="assets/img/slider/2.jpg">
-                                    <p class="flex-caption">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                </li>
-                                <li data-thumb="assets/img/slider/5.jpg">
-                                    <img src="assets/img/slider/5.jpg">
-                                    <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur.</p>
-                                </li>
-                                <li data-thumb="assets/img/slider/6.jpg">
-                                    <img src="assets/img/slider/6.jpg">
-                                    <p class="flex-caption">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="row">
+                    <div class="span12">
+                        <i class="icon-envelope-alt page-title-icon"></i>
+                        <h2>Contact Us /</h2>
+                        <p>Here is how you can contact us</p>
                     </div>
                 </div>
-				-->
-			</div>
+            </div>
         </div>
 
-        
+        <!-- Contact Us -->
+        <div class="contact-us container">
+            <div class="row">
+                <div class="contact-form span7">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper <a href="">suscipit lobortis</a> nisl ut aliquip ex ea commodo consequat.</p>
+                    <form method="post" action="assets/sendmail.php">
+                        <label for="name" class="nameLabel">Name</label>
+                          <input id="name" type="text" name="name" placeholder="Enter your name...">
+                        <label for="email" class="emailLabel">Email</label>
+                          <input id="email" type="text" name="email" placeholder="Enter your email...">
+                        <label for="subject">Subject</label>
+                          <input id="subject" type="text" name="subject" placeholder="Your subject...">
+                        <label for="message" class="messageLabel">Message</label>
+                          <textarea id="message" name="message" placeholder="Your message..."></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-address span5">
+                    <h4>We Are Here</h4>
+                    <div class="map"></div>
+                    <h4>Address</h4>
+                    <p>Via Principe Amedeo 9 <br> 10100, Torino, TO, Italy</p>
+                    <p>Phone: 0039 333 12 68 347</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <footer>
             <div class="container">

@@ -1,4 +1,4 @@
-<? 
+<?php
 
 function link_to($descricao, $url) {
 
