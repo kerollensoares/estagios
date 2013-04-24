@@ -52,23 +52,29 @@
                             <div class="nav-collapse collapse">
                                 <ul class="nav pull-right">
                                     <li class="current-page">
-                                        <a href="index.html"><i class="icon-home"></i><br />Inicio</a>
+                                        <!-- <a href="index.html"><i class="icon-home"></i><br />Inicio</a> -->
+										<?php echo link_to("<i class='icon-home'></i><br />Inicio", "?pag=home"); ?>
                                     </li>
                                     <li>
-                                        <a href="portfolio.html"><i class="icon-camera"></i><br />Portfolio</a>
+                                        <!-- <a href="portfolio.html"><i class="icon-camera"></i><br />Portfolio</a> -->
+										<?php echo link_to("<i class='icon-camera'></i><br />Portfolio", "?pag=portfolio"); ?>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="icon-comments"></i><br />Blog</a>
+                                        <!-- <a href="#"><i class="icon-comments"></i><br />Blog</a> -->
+										<?php echo link_to("<i class='icon-comments'></i><br />Blog", "?pag=#"); ?>
                                     </li>
                                     <li>
-                                        <a href="services.html"><i class="icon-tasks"></i><br />Services</a>
+                                        <!-- <a href="services.html"><i class="icon-tasks"></i><br />Services</a> -->
+										<?php echo link_to("<i class='icon-tasks'></i><br />Services", "?pag=services"); ?>
                                     </li>
                                     <li>
+										<!-- <a href="?pag=about"><i class="icon-user"></i><br />About</a> -->
 										<?php echo link_to("<i class='icon-user'></i><br />Sobre", "?pag=about"); ?>
-                                        <!-- <a href="?pag=about"><i class="icon-user"></i><br />About</a> -->
                                     </li>
                                     <li>
-                                        <a href="contact.html"><i class="icon-envelope-alt"></i><br />Contact</a>
+                                        <!-- <a href="contact.html"><i class="icon-envelope-alt"></i><br />Contact</a> -->
+										<?php echo link_to("<i class='icon-envelope-alt'></i><br />Contato", "?pag=contact"); ?>
+										
                                     </li>
                                 </ul>
                             </div>

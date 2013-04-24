@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <body>
+	
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <i class="icon-camera page-title-icon"></i>
+                        <h2>Portfolio /</h2>
+                        <p>Here is the work we've done so far</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
         <!-- Portfolio -->
         <div class="portfolio portfolio-page container">
             <div class="row">

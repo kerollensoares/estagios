@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <body>
+	
+		<!-- Page Title -->
+        <div class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <i class="icon-user page-title-icon"></i>
+                        <h2>About Us /</h2>
+                        <p>Below you can find more information about our company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- About Us Text -->
         <div class="about-us container">
             <div class="row">
