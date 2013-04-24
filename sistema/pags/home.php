@@ -1,7 +1,7 @@
 <!-- Site Description -->
         <div class="presentation container">
-            <h2>We are <span class="violet">Andia</span>, a super cool design agency.</h2>
-            <p>We design beautiful websites, logos and prints. Your project is safe with us.</p>
+            <h2>Nós somos <span class="violet">IteraEstagios</span>, seu sistema de gerenciamento de estágios.</h2>
+            <p>Controle total e interativo entre alunos, professores e instituição.</p>
         </div>
 
         <!-- Services -->

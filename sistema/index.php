@@ -57,7 +57,7 @@
                                     </li>
                                     <li>
                                         <!-- <a href="portfolio.html"><i class="icon-camera"></i><br />Portfolio</a> -->
-										<?php echo link_to("<i class='icon-camera'></i><br />Portfolio", "?pag=portfolio"); ?>
+										<?php echo link_to("<i class='icon-list-alt'></i><br />Documentos", "?pag=portfolio"); ?>
                                     </li>
                                     <li>
                                         <!-- <a href="#"><i class="icon-comments"></i><br />Blog</a> -->
@@ -65,7 +65,7 @@
                                     </li>
                                     <li>
                                         <!-- <a href="services.html"><i class="icon-tasks"></i><br />Services</a> -->
-										<?php echo link_to("<i class='icon-tasks'></i><br />Services", "?pag=services"); ?>
+										<?php echo link_to("<i class='icon-tasks'></i><br />Estágios", "?pag=services"); ?>
                                     </li>
                                     <li>
 										<!-- <a href="?pag=about"><i class="icon-user"></i><br />About</a> -->
@@ -76,28 +76,37 @@
 										<?php echo link_to("<i class='icon-envelope-alt'></i><br />Contato", "?pag=contact"); ?>
 										
                                     </li>
+									<li class="separator"></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle usermenu" data-toggle="dropdown">
+											<i class='icon-envelope-alt'></i><br />
+											<span>&nbsp;&nbsp;Logar</span>
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#">Perfil</a>
+											</li>
+											<li>
+												<a href="#">Configurações</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="../index.htm">Sair</a>
+											</li>
+										</ul>
+									</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div
 
-		<div class="container">
-			Teste
-			<?php //include("pags/home.php"); ?>
-		</div>
 				
         <!-- Slider -->
         <div class="slider">
             <div class="container">
-				<? 	if (isset($_GET['pag'])) {
-						$pag = $_GET['pag'];
-					}else{
-						$pag = "home";
-					}
-					render_partial($pag); ?>
 				<? //include("pags/home.php"); ?>
                 <!--
 				<div class="row">
@@ -128,36 +137,96 @@
 			</div>
         </div>
 
-        
+        <div class="what-we-do container">
+            <div class="row">
+                
+			<nav id="left-panel" style="height: 100%; position: fixed; align: center; top: 200px; left: 15px;">
+				<div class="nav-collapse collapse" id="left-panel-content" style="overflow: hidden;">
+					<ul class="nav pull-right" style="-webkit-transition: -webkit-transform 0ms; transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; 
+								-webkit-transform: translate3d(0px, 0px, 0);">
+						<li class="active" >
+							<a href="dashboard.htm">
+								<div class="service" style="height:5px; width:100px text-align:left;">
+									<i class="icon-envelope"></i>
+									OPCAOTESTE<br>
+								</div>
+							</a>
+						</li>
+						<li>
+							<div style="align:left;"><a href="#" ><span class="icon-th-large"></span>Layout</a></div>
+						</li>
+						<li>
+							<a href="#"><span class="icon-font"></span>Typography</a>
+						</li>
+						<li>
+							<a href="#"><span class="icon-edit"></span>Forms</a>
+						</li>
+						<li>
+							<a href="#"><span class="icon-table"></span>Tables</a>
+						</li>
+						
+						<li>
+							<a href="#"><span class="icon-inbox"></span>Components</a>
+						</li>
+						<li>
+							<a href="#"><span class="icon-cog"></span>JavaScript</a>
+						</li>
+						<li class="lp-dropdown">
+							<a href="#" class="lp-dropdown-toggle" id="extras-dropdown"><span class="icon-reorder"></span>Extras</a>
+							
+						</li>
+						<li class="lp-dropdown">
+							<a href="#" class="lp-dropdown-toggle" id="pages-dropdown"><span class="icon-file-alt"></span>Pages</a>
+							
+						</li>
+					</ul>
+				</div>
+				<div class="icon-caret-down"></div>
+				<div class="icon-caret-up"></div>
+			</nav>
+		</div>
+		</div>
+		
+		<div class="slider">
+		<div class="container">
+			<? 	if (isset($_GET['pag'])) {
+					$pag = $_GET['pag'];
+				}else{
+					$pag = "home";
+				}
+				render_partial($pag); 
+			?>
+		</div>
+        </div>
         <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="widget span3">
-                        <h4>About Us</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                        <p><a href="">Read more...</a></p>
+                        <h4>Sobre nós</h4>
+                        <p>Informações sobre a instituição.</p>
+                        <p><a href="">Ler mais...</a></p>
                     </div>
                     <div class="widget span3">
-                        <h4>Latest Tweets</h4>
+                        <h4>Ultimos Tweets</h4>
                         <div class="show-tweets"></div>
                     </div>
                     <div class="widget span3">
-                        <h4>Flickr Photos</h4>
+                        <h4>Flickr Fotos</h4>
                         <ul class="flickr-feed"></ul>
                     </div>
                     <div class="widget span3">
-                        <h4>Contact Us</h4>
-                        <p><i class="icon-map-marker"></i> Address: Via Principe Amedeo 9, 10100, Torino, TO, Italy</p>
-                        <p><i class="icon-phone"></i> Phone: 0039 333 12 68 347</p>
-                        <p><i class="icon-user"></i> Skype: Andia_Agency</p>
-                        <p><i class="icon-envelope-alt"></i> Email: <a href="">contact@andia.co.uk</a></p>
+                        <h4>Nos contate</h4>
+                        <p><i class="icon-map-marker"></i> Endereço: Av. JK</p>
+                        <p><i class="icon-phone"></i> Tel: (32) 91246030</p>
+                        <p><i class="icon-user"></i> Skype: kerollensoares</p>
+                        <p><i class="icon-envelope-alt"></i> Email: <a href="">kerollen.soares@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="footer-border"></div>
                 <div class="row">
                     <div class="copyright span4">
-                        <p>Copyright 2012 Andia - All rights reserved. Template by <a href="http://azmind.com">Azmind</a>.</p>
+                        <p>Copyright 2012 Kerollen - Todos os direitos reservados. Template by <a href="http://kerollen.com">Kerollen</a>.</p>
                     </div>
                     <div class="social span8">
                         <a class="facebook" href=""></a>
