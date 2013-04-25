@@ -148,7 +148,7 @@
 							<a href="dashboard.htm">
 								<div class="service" style="height:5px; width:100px text-align:left;">
 									<i class="icon-envelope"></i>
-									OPCAOTESTE<br>
+									OPCAO TESTE<br>
 								</div>
 							</a>
 						</li>
